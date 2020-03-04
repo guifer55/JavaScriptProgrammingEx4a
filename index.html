@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <script src="app.js">//this is to connect the external aap.js file. It runs the external appjs first, and then the embedded</script>
+    <script>
+        /*alert('Hello from the embedded Javascript. This is my first HTML and Javascript application');*/
+
+        let a = 33;
+        let b = 19;
+        //alert(a + b);
+
+        //prompt the user for imput
+        //let c = prompt('Value 1:', 0);
+        //let d = prompt('Value 2:', 0);
+        //let e = c + d;
+        //alert(e);// we get a string concat
+        //console.log(e);
+
+        //convert the values entreed to integers
+        //let f = parseInt(c);
+        //let g = parseInt(d);
+        //let h = f + g;
+        //alert(h);
+
+        let isTheInputNumeric = prompt('Enter an alpha character');
+        
+        alert(isNaN(isTheInputNumeric));
+
+        //  try{
+        //      let numberOrLetterInput = prompt('Please enter a number or letter');
+        //      if(isNaN(numberOrLetterInput)){
+        //          throw new Error('Input is invalid');
+        //     }
+            
+        // }catch(error){
+        //             alert(error.message);
+        // }
+            
+             
+             
+           
+
+            
+        
+        
+        
+
+
+
+    </script>
+</head>
+<body>
+
+    <h1>HTML nd Javascript Exercise</h1>
+    <script>
+        document.writeln(`<p> The input <strong>${isTheInputNumeric}</strong> is not numeric, true or false?</p>`);
+        document.writeln(`<p>${isNaN(isTheInputNumeric)}</p>`);
+
+        document.writeln(`<p> my current url is: <em>${window.location}</em></p>`);
+    </script>
+    
+</body>
+</html>

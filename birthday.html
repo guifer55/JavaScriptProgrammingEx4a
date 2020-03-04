@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+
+        
+
+        
+
+        try{
+            let birthDate = prompt('Please enter your birth year:', 0);
+            let age = prompt('Please enter the month you were born:', 0);
+            let newDate = prompt('Please enter the day you were born:', 0);
+
+            
+
+              if(isNaN(birthDate, age, newDate)){
+                  throw new Error('Input is invalid');
+             }
+            
+         }catch(error){
+                     alert(error.message);
+         }
+
+         alert(birthDate, age, newDate);
+
+         let birthDate = new Date(1982, 7, 11, 11, 28);
+console.log(birthDate);
+
+console.log(`What is the date 1 billion seconds from my birthday and how old am
+I or will be that year.`);
+
+let seconds = 1000000000;//so here I ask input from the user for seconds
+
+
+let days =  seconds / 86400;
+console.log(Math.round(days));
+
+//expression below gives the days of the month plus the variable
+let nextDate = birthDate.getDate() + days;
+
+console.log(` next date ${nextDate}`);
+
+
+//get date just gets the day, remen=ber
+let newDate = new Date(birthDate.getFullYear(), birthDate.getMonth(), birthDate.getDate());
+console.log(` new date yall ${newDate}`);
+
+//
+newDate.setDate(nextDate);
+console.log(newDate);
+
+let age = newDate.getFullYear() - birthDate.getFullYear();
+
+        
+
+    </script>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <script>
+        
+    </script>
+</body>
+</html>
